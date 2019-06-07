@@ -1,0 +1,23 @@
+@import "settings";
+
+body {
+    background-color: $color-bg;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background: #111;
+    border: 3px solid #f2f2f2;
+    border-radius: 4px;
+}
+@media (orientation: portrait) {
+    .card {
+        flex-basis: 30%;
+        height: 16.66vh;
+    }
+}
