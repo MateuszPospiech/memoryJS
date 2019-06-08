@@ -1,3 +1,4 @@
+@import "reset";
 @import "settings";
 
 body {
@@ -15,6 +16,42 @@ body {
     border: 3px solid #f2f2f2;
     border-radius: 4px;
 }
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
+.brown {
+    background: brown;
+}
+.yellow {
+    background: yellow;
+}
+.gray {
+    background: gray;
+}
+.cadetblue {
+    background: cadetblue;
+}
+.coral {
+    background: coral;
+}
+.cyan {
+    background: cyan;
+}
+
+.off {
+    background: #eee;
+}
+.hidden {
+    background: #111;
+}
+
 @media (orientation: portrait) {
     .card {
         flex-basis: 30%;
