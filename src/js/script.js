@@ -1,3 +1,4 @@
+//Game logic
 const cardsColor = ["red", "red", "green", "green", "blue", "blue", "brown", "brown", "yellow", "yellow", "gray", "gray", "cadetblue", "cadetblue", "coral", "coral", "cyan", "cyan"];
 
 let cards = document.querySelectorAll(".card");
@@ -61,12 +62,22 @@ const init = function() {
         cardsColor.splice(position, 1) //delete element from Array
     })
 
-    setTimeout(function(){
+    // setTimeout(function(){
         cards.forEach(card => {
             card.classList.add("hidden");
             card.addEventListener("click", clickCard)
         })
-    }, 2000)
+    // }, 2000)
+}
+init()
+
+//Buttons
+let newGame = document.querySelector('.newGame');
+
+let startGame = function() {
+    
+    let menu = document.querySelector('.menu');
+    menu.classList.add("menu-off");
 }
 
-init()
+newGame.addEventListener("click", startGame);
