@@ -62,12 +62,10 @@ const init = function() {
         cardsColor.splice(position, 1) //delete element from Array
     })
 
-    // setTimeout(function(){
         cards.forEach(card => {
             card.classList.add("hidden");
             card.addEventListener("click", clickCard)
         })
-    // }, 2000)
 }
 init()
 
